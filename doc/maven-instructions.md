@@ -6,7 +6,7 @@ Essentially, you make a new version of the CDA2FHIR repository, and build to it 
 
 #1 - Increment version number in `pom.xml` file in main project.
 
-`git checkout fhir-stu3`
+`git checkout fhir-r4`
 
 `<version>X.Y.Z-SNAPSHOT</version>` should be updated to reflect the intended version number of the release. Update CHANGELOG.md to reflect any changes made between this and the prior version.
 

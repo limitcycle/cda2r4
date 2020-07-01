@@ -259,7 +259,7 @@ public class CCDTransformerImpl implements ICDATransformer, Serializable {
 
 	/**
 	 * @param cda                A Consolidated CDA (C-CDA) 2.1 Continuity of Care
-	 *                           fhir-stu3 Document (CCD) instance to be transformed
+	 *                           fhir-r4 Document (CCD) instance to be transformed
 	 * @param bundleType         The type of bundle to create, currently only
 	 *                           supports transaction bundles.
 	 * @param resourceProfileMap The mappings of default resource profiles to

@@ -876,7 +876,7 @@ public class ValueSetsTransformerImpl implements IValueSetsTransformer, Serializ
 	@Override
 	public Coding tProblemType2ConditionCategoryCodes(String cdaProblemType) {
 		// TODO: find a defined enum/valueset/codesystem for this.
-		// STU3 doesn't seem to have this so use DSTU2 definitions instead.
+		// R4 doesn't seem to have this so use DSTU2 definitions instead.
 		// https://www.hl7.org/fhir/DSTU2/valueset-condition-category.html
 		Coding c = new Coding().setSystem("http://terminology.hl7.org/CodeSystem/condition-category");
 		if (cdaProblemType == null)

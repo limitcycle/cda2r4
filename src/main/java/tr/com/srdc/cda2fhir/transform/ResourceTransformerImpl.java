@@ -1822,7 +1822,7 @@ public class ResourceTransformerImpl implements IResourceTransformer, Serializab
 					result.updateFrom(entityResult);
 					localBundleInfo.updateFrom(entityResult);
 					if (entityResult.hasPractitioner()) {
-						// TODO: verify the STU3 mappings
+						// TODO: verify the R4 mappings
 						// TODO: find defined valueset/codesystem for immunization role
 						// fhirImmunization.setPerformer(new Reference(entry.getResource().getId()));
 						ImmunizationPerformerComponent perf = fhirImmunization.addPerformer();
@@ -1937,8 +1937,8 @@ public class ResourceTransformerImpl implements IResourceTransformer, Serializab
 			}
 		}
 
-		// TODO: in STU3 this property at this level was removed. Figure out how
-		// to map this to STU3
+		// TODO: in R4 this property at this level was removed. Figure out how
+		// to map this to R4
 		// fhirImmunization.setReported(Config.DEFAULT_IMMUNIZATION_REPORTED);
 		return result;
 
